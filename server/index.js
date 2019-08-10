@@ -22,6 +22,6 @@ app.use('/graphql', bodyParser.json(), graphqlExpress({ schema }));
 
 app.use('/graphiql', graphiqlExpress({ endpointURL: '/graphql' }));
 
-app.listen(3000, () => {
+app.listen(9999, () => {
   console.log('Go to http://localhost:3000/graphiql to run queries!');
 });
